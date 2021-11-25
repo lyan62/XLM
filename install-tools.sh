@@ -37,7 +37,7 @@ fi
 # Download fastBPE
 if [ ! -d "$FASTBPE_DIR" ]; then
   echo "Cloning fastBPE from GitHub repository..."
-  git clone https://github.com/glample/fastBPE
+  git clone git@github.com:glample/fastBPE.git
 fi
 
 # Compile fastBPE
@@ -51,13 +51,15 @@ fi
 # Download Sennrich's tools
 if [ ! -d "$WMT16_SCRIPTS" ]; then
   echo "Cloning WMT16 preprocessing scripts..."
-  git clone https://github.com/rsennrich/wmt16-scripts.git
+  git clone git@github.com:rsennrich/wmt16-scripts.git
+  #https://github.com/rsennrich/wmt16-scripts.git
 fi
 
 # Download WikiExtractor
 if [ ! -d $TOOLS_PATH/wikiextractor ]; then
     echo "Cloning WikiExtractor from GitHub repository..."
-    git clone https://github.com/attardi/wikiextractor.git
+    git clone git@github.com:attardi/wikiextractor.git
+    # https://github.com/attardi/wikiextractor.git
 fi
 
 # # Chinese segmenter
